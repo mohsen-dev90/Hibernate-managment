@@ -18,7 +18,7 @@
         <property name="hbm2ddl.auto">update</property>
         <property name="connection.pool_size">20</property>
         <property name="hibernate.current_session_context_class">thread</property>
-
+        <mapping class="Entity.Person"/>
         <!-- DB schema will be updated if needed -->
         <!-- <property name="hbm2ddl.auto">update</property> -->
     </session-factory>

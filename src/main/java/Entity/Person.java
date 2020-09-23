@@ -15,8 +15,8 @@ public class Person extends BaseEntity implements Serializable {
     private String firstName;
     private String lastName;
 
-    @Temporal(TemporalType.DATE)
-    private Date dateOfBirth;
+//    @Temporal(TemporalType.DATE)
+//    private Date dateOfBirth;
 
     @ManyToOne
     @JoinColumn(name = "managerId")
@@ -50,14 +50,14 @@ public class Person extends BaseEntity implements Serializable {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-
-    public Date getDateOfBirth() {
-        return dateOfBirth;
-    }
-
-    public void setDateOfBirth(Date dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
-    }
+//
+//    public Date getDateOfBirth() {
+//        return dateOfBirth;
+//    }
+//
+//    public void setDateOfBirth(Date dateOfBirth) {
+//        this.dateOfBirth = dateOfBirth;
+//    }
 
     public Entity.person getManager() {
         return manager;
