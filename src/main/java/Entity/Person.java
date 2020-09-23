@@ -33,8 +33,12 @@ public class Person extends BaseEntity implements Serializable {
     inverseJoinColumns = @JoinColumn(name = "emailId") )
     private List<Email> emails;
 
+    public Person(){}
 
-
+    public Person(String firstName,String lastName ){
+        this.firstName=firstName;
+        this.lastName=lastName;
+    }
     public String getFirstName() {
         return firstName;
     }

@@ -8,7 +8,7 @@ public interface PersonDao {
 
     public void savePerson (Person person);
     public List<Person> showAllPerson();
-    public void updatePerson (int id , String firstName, String lastName,String role);
+    public void updatePerson (int id , String firstName, String lastName);
     public void deletePerson (Person person);
 
 

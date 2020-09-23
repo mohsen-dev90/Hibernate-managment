@@ -1,6 +1,7 @@
-package hibernate.util;
+package daoImpl;
 
 import Entity.Person;
+import hibernate.util.HibernateUtil;
 import managment.Dao.PersonDao;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
